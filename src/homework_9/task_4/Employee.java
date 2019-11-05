@@ -3,7 +3,7 @@ package homework_9.task_4;
 import java.io.Serializable;
 
 public class Employee implements Serializable {
-    private static final long serialVersionUID = 8899520090505034685L;
+    private static final long serialVersionUID = 1;
     private String name;
     private int age;
     public Work work;
