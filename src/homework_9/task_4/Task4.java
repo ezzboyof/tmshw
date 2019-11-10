@@ -9,6 +9,7 @@ public class Task4 {
         createFile(FILE_NAME);
         Employee dmitriy = new Employee("Dmitriy", 15, new Work("Student", 20));
         writeObjectToFile(dmitriy, FILE_NAME);
+        // зачем dmitriy передавать в метод для чтения из файла?
         readObjectFromFile(dmitriy, FILE_NAME);
     }
 
@@ -33,10 +34,16 @@ public class Task4 {
         }
     }
 
+    // Employee object ты не используешь этот аргумент, зачем передавать?
     public static void readObjectFromFile(Employee object, String fileName) {
         try (FileInputStream fis = new FileInputStream(fileName);
              ObjectInputStream obis = new ObjectInputStream(fis)) {
             Object obj = (Object) obis.readObject();
+            /*
+            Employee employee = (Employee) obis.readObject();
+            return employee;
+            а вывести на экран в методе мейн
+            */
             System.out.println(obj);
         } catch (ClassNotFoundException | FileNotFoundException e) {
             System.err.println(e.getMessage());
