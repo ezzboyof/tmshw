@@ -11,6 +11,7 @@ public class Reader {
         try (FileReader readerText = new FileReader(FILE_PATH);
              BufferedReader bReaderText = new BufferedReader(readerText)) {
             String line;
+             // таким образом ты читаешь весь файл, а нужно было только часть с секретным сообщением
             while ((line = bReaderText.readLine()) != null) {
                 System.out.println(line);
             }
