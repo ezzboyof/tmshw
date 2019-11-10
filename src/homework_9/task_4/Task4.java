@@ -35,6 +35,7 @@ public class Task4 {
     }
 
     // Employee object ты не используешь этот аргумент, зачем передавать?
+    // void -> Employee
     public static void readObjectFromFile(Employee object, String fileName) {
         try (FileInputStream fis = new FileInputStream(fileName);
              ObjectInputStream obis = new ObjectInputStream(fis)) {
