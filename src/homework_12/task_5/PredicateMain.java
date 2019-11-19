@@ -5,6 +5,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.function.Predicate;
 
+// +
 public class PredicateMain {
     public static void main(String[] args) {
         List<User> users = new ArrayList<>();
