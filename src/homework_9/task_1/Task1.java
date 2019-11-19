@@ -4,6 +4,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Arrays;
 
+// +
 public class Task1 {
 
     private static final String FILE_PATH = "src/homework_9/task_1/text";

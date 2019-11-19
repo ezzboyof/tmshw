@@ -13,10 +13,12 @@ public class Task5 {
         } catch (Exception e) {
             e.printStackTrace();
         }
-    }
-    public static void readFile(){
+    } // абзац между методами
+    public static void readFile(){     // void -> Employee
         try(ObjectInputStream oin = new ObjectInputStream(new FileInputStream("C:\\Users\\easys\\IdeaProjects\\tmshw\\src\\homework_9\\task_4\\text"))){
             Employee employee = (Employee) oin.readObject();
+            // return employee;
+            // а на экран в методе мейн
             System.out.printf(String.valueOf(employee));
         } catch (IOException e) {
             e.printStackTrace();

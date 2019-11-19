@@ -8,6 +8,8 @@ public class Writer {
 
     public static void main(String[] args) throws IOException {
         try (FileWriter fr = new FileWriter(FILE_PATH, true)) {
+            // когда записывал в файл, стоило запомнить с какого байта начинается твое сообщение, чтобы потом прочимтать его
+            // + кол-во байт в сообщение, чтобы знать сколько байт прочитать
             String text = "\n" + "Area 51";
             fr.write(text);
             fr.flush();
