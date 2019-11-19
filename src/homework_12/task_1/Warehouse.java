@@ -9,6 +9,7 @@ public class Warehouse {
     public static void main(String[] args) {
         Set<Box> boxes = new HashSet<>();
 
+        // у коробки стоило сделать поле timeAdded и сетать его перед добавлением в хранилище
         boxes.add(new Box("Gold"));
         LocalDateTime booksTime = LocalDateTime.now();
         System.out.println("First box was added on " + booksTime);
