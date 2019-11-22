@@ -11,6 +11,7 @@ public class Task5 {
         Optional<Integer> multiplication = numbers.stream()
                 .limit(5)
                 .reduce((x, y) -> x * y);
+        // не стоит просто печатать Optional, данные лучше извлечь
         System.out.println(multiplication);
     }
 }
