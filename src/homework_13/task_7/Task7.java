@@ -17,6 +17,7 @@ public class Task7 {
         phones.add(new Phone("ZTE", 100));
         System.out.println(phones);
         Optional<Phone> min = phones.stream().min(Comparator.comparing(Phone::getPrice));
+          // не стоит просто печатать Optional, данные лучше извлечь
         System.out.println("Min price: " + min);
     }
 }
