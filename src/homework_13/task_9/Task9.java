@@ -20,6 +20,7 @@ public class Task9 {
         phones.add(new Phone("ZTE", 200));
         phones.add(new Phone("Samsung", 1400));
 
+// твой вариант не оптимальный, дважды нужно итерироваться по коллекции. На лекции я показывал вариант с partitioning, посмотри его
         List<Phone> appleGroup = phones.stream()
                 .filter(phone -> phone.getModel().contains("Apple"))
                 .collect(Collectors.toList());
