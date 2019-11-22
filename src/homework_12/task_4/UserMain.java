@@ -4,6 +4,7 @@ import java.util.function.Supplier;
 
 public class UserMain {
     public static void main(String[] args) {
+        // зачем здесь try-catch?
         try {
             String nameUser = "Dmitriy";
             Supplier<User> userSupplier = () -> new User(nameUser);
