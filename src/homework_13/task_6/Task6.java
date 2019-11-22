@@ -5,6 +5,7 @@ import homework_13.task_3.Phone;
 import java.util.ArrayList;
 import java.util.List;
 
+// +
 public class Task6 {
     public static void main(String[] args) {
         List<Phone> phones = new ArrayList<>();
