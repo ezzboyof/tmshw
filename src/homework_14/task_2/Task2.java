@@ -20,7 +20,7 @@ public class Task2 {
         ) {
             String pancakes;
             while ((pancakes = bufferedReader.readLine()) != null) {
-                if (pancakes.toLowerCase().contains("pancakes")) {
+                if (pancakes.toLowerCase().contains("pancakes")) {// константа
                     fileWriter.write(pancakes + "\n");
                 }
             }
