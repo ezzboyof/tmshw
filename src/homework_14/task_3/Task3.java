@@ -22,6 +22,7 @@ public class Task3 {
         mapSecond.put("Second", listSecond);
         System.out.println(mapSecond);
 
+        // у тебя программа работает некорректно, попробуй во вторую мапу заменить "Second" -> "First" и посмотри результат
         Map<String, List<Integer>> mapThierd = new HashMap<>(mapFirst);
         for (int i = 0; i < mapSecond.size(); i++) {
             int finalI = i;

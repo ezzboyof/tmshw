@@ -9,6 +9,7 @@ public class Task1 {
         String name = scanner.next();
         System.out.println("Enter programming language: ");
         String language = scanner.next();
+        // используй шаблон String.format() %s, %d
         System.out.println("Hello, my name is " + name + "." + " I'm " + language + " developer and I'm glad to became a part of your company.");
     }
 }
